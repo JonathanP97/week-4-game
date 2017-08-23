@@ -1,0 +1,23 @@
+body {
+	background-color: #81f27d;
+}
+
+div {
+	background-color: orange;
+	padding: 5px;
+	margin-bottom: 15px;
+	width: 25%;
+}
+
+img {
+	border: 10px solid red;
+	background: green;
+}
+
+#imageBank{
+	position: fixed;
+	right: 30%;
+	top: 100px;
+	width: 15.8%;
+	padding: 10px;
+}
