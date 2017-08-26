@@ -1,14 +1,8 @@
-.heroBank{
-	border: 5px solid orange;
-}
 
-.stage{
-	border: 5px solid blue;
-}
-
-.enemyHp {
-	background-color: black;
+.hp {
+	background-color: green;
 	width:100px;
+	display: none;
 }
 
 .attackButton {
@@ -17,4 +11,12 @@
 	width: 65px;
 	margin-top: 20px;
 	border: 2px solid black;
+}
+
+.heroPicked {
+	display: none;
+}
+
+.enemyPicked {
+	display: none;
 }
