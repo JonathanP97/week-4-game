@@ -59,13 +59,13 @@ $(document).on("click", "h4", function() {
 		enemy.health -= hero.attack;
 		hero.attack += 5;
 
-		hpBar.animate({width: enemy.health + 'px'}, "show");
+		hpBar.animate({width: enemy.health + 'px'}, 800);
 
 		console.log("Enemy HP: " + enemy.health);
 		console.log("Hero Attack: "+ hero.attack);
 		enemyTurn();
 
-		if(enemy.health === 0) {
+		if(enemy.health < 0) {
 			newEnemy(enemy.letter);
 		}
 	}
@@ -126,10 +126,16 @@ function setEnemy(e) {
 function enemyTurn() {
 	var hpBar = $(".heroHp");
 	hero.health -= enemy.counterAttack;
-	hpBar.animate({width: hero.health + 'px'}, "show");
+	hpBar.animate({width: hero.health + 'px'}, 800);
 }
 
 function newEnemy(letter) {
 	enemyDefeated.push(letter);
+	alert("Defeat another enemy!");
+	enemySelected = false;
 
+	var num = enemyDefeated.indexOf(letter);
+	if(num=== -1) {
+		
+	}
 }

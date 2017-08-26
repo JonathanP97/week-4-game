@@ -1,8 +1,16 @@
-
+.stage{
+	background-color: grey;
+}
 .hp {
 	background-color: green;
 	width:100px;
 	display: none;
+	height:20px;
+	border: 2px solid black;
+}
+
+.enemyHp{
+	background-color: purple;
 }
 
 .attackButton {
