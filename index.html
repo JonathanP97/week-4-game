@@ -4,8 +4,7 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
-	<script type="text/javascript" src="./assets/javascript/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="./assets/javascript/game.js"></script>
+	
 </head>
 
 <body>
@@ -18,16 +17,20 @@
 					<div class="col-md-8">
 						<h3>Choose Your Character</h3>
 
-						<img hero="a" height="100" width="75" src="./assets/images/orange.jpeg">
-						<img hero="b" height="100" width="75" src="./assets/images/apple.jpg">
-						<img hero="c" height="100" width="75" src="./assets/images/pineapple.jpg">
-						<img hero="d" height="100" width="75">
+						<img class="hero" hero="a" height="100" width="75" src="./assets/images/orange.jpeg">
+						<img class="hero" hero="b" height="100" width="75" src="./assets/images/apple.jpg">
+						<img class="hero" hero="c" height="100" width="75" src="./assets/images/pineapple.jpg">
+						<img class="hero" hero="d" height="100" width="75">
 
+						<div id="charStats">
+							<p id="charHp"></p>
+							<p id="charAtt"></p>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<h3 class="heroName"></h3>
-						<h4>Health Points: <h4 class="healthStat"></h4></h4>
-						<h4>Attack Points: <h4 class="attackStat"></h4></h4>
+						<h4>Health Points: <h4 id="healthStat"></h4></h4>
+						<h4>Attack Points: <h4 id="attackStat"></h4></h4>
 
 					</div>
 				</div>
@@ -35,22 +38,22 @@
 				
 
 				<br>
-				<h3>Eliminate Your Opponent</h3>
+				<h3>Eliminate All Opponents</h3>
 
-				<img hero="no" en="a" height="100" width="75">
-				<img hero="no" en="b" height="100" width="75">
-				<img hero="no" en="c" height="100" width="75">
-				<img hero="no" en="d" height="100" width="75">
+				<img class="villain vil-a" villain="a" height="100" width="75">
+				<img class="villain vil-b" villain="b" height="100" width="75">
+				<img class="villain vil-c" villain="c" height="100" width="75">
+				<img class="villain vil-d" villain="d" height="100" width="75">
 			</div>
 
 			<div class="col-md-5 stage">
 				<div class="row">
-					<div class="col-md-6 heroStage">
-						<h4 class="heroName"></h4>
-						<img class="heroPicked" src="" height="100" width="85">
+					<div class="col-md-6 col-xs-6 heroStage">
+						<h4 id="heroName"></h4>
+						<img id="heroPicked" src="" height="100" width="85">
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-6 col-xs-6">
 						<h4>Health</h4>
 						<div class="hp heroHp"></div>
 						<h4 class="attackButton">Attack</h4>
@@ -58,20 +61,22 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6">
-						<h4 class="enemyName"></h4>
-						<img class="enemyPicked" height="100" width="85">
+					<div class="col-md-6 col-xs-6">
+						<h4 id="villainName"></h4>
+						<img id="villainPicked" src="" height="100" width="85">
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-6 col-xs-6">
 						<h4>Enemy Health</h4>
-						<div class="hp enemyHp"></div>
+						<div class="hp villainHp"></div>
 					</div>
 				</div>			
  
  			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="./assets/javascript/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
 
 </body>
 
