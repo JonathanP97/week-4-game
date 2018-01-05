@@ -1,3 +1,19 @@
+body {
+	background-color: khaki;
+	width: 85%;
+	margin: auto;
+}
+
+img {
+	height: 170px;
+	width: 120px;
+	border: solid #2451a5 3.5px;
+}
+
+.villain {
+	border: solid #b22013 3.5px;
+}
+
 .stage{
 	background-color: grey;
 }
@@ -19,6 +35,16 @@
 	width: 65px;
 	margin-top: 20px;
 	border: 2px solid black;
+}
+
+.status {
+	background-color: white;
+	width: 35%;
+}
+
+.msg {
+	text-align: center;
+	color: #545454;
 }
 
 #heroPicked {

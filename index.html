@@ -1,79 +1,85 @@
 <!DOCTYPE>
 <html>
 
-<head>
+<head> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	
 </head>
 
 <body>
-	<div class="container">	
-		<div class="row">
+	<div class="row">
 
-			<div class="col-md-7 heroBank">
+		<div class="col-md-7 heroBank">
 
-				<div class="row">
-					<div class="col-md-8">
-						<h3>Choose Your Character</h3>
+			<div class="row">
+				<div class="col-md-8">
+					<h3>Choose Your Character</h3>
 
-						<img class="hero" hero="a" height="100" width="75" src="./assets/images/orange.jpeg">
-						<img class="hero" hero="b" height="100" width="75" src="./assets/images/apple.jpg">
-						<img class="hero" hero="c" height="100" width="75" src="./assets/images/pineapple.jpg">
-						<img class="hero" hero="d" height="100" width="75">
+					<img class="hero" hero="a" src="./assets/images/mace.jpg">
+					<img class="hero" hero="b" src="./assets/images/luke.png">
+					<img class="hero" hero="c" src="./assets/images/Qui.png">
+					<img class="hero" hero="d" src="./assets/images/obi.jpg">
 
-						<div id="charStats">
-							<p id="charHp"></p>
-							<p id="charAtt"></p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<h3 class="heroName"></h3>
-						<h4>Health Points: <h4 id="healthStat"></h4></h4>
-						<h4>Attack Points: <h4 id="attackStat"></h4></h4>
-
+					<div id="charStats">
+						<b id="charName"></b>
+						<p id="charHp"></p>
+						<p id="charAtt"></p>
 					</div>
 				</div>
+				<div class="col-md-4">
+					<h3 class="heroName"></h3>
+					<h4>Health Points: <h4 id="healthStat"></h4></h4>
+					<h4>Attack Points: <h4 id="attackStat"></h4></h4>
 
-				
-
-				<br>
-				<h3>Eliminate All Opponents</h3>
-
-				<img class="villain vil-a" villain="a" height="100" width="75">
-				<img class="villain vil-b" villain="b" height="100" width="75">
-				<img class="villain vil-c" villain="c" height="100" width="75">
-				<img class="villain vil-d" villain="d" height="100" width="75">
+				</div>
 			</div>
 
-			<div class="col-md-5 stage">
-				<div class="row">
-					<div class="col-md-6 col-xs-6 heroStage">
-						<h4 id="heroName"></h4>
-						<img id="heroPicked" src="" height="100" width="85">
-					</div>
+			
+	
+			<br>
+			<h3>Eliminate All Opponents</h3>
 
-					<div class="col-md-6 col-xs-6">
-						<h4>Health</h4>
-						<div class="hp heroHp"></div>
-						<h4 class="attackButton">Attack</h4>
-					</div>
+			<img class="villain vil-a" villain="a" src="./assets/images/dooku.jpg">
+			<img class="villain vil-b" villain="b" src="./assets/images/grievous.jpg">
+			<img class="villain vil-c" villain="c" src="./assets/images/maul.png">
+			<img class="villain vil-d" villain="d" src="./assets/images/vader.jpg">
+		</div>
+
+		<div class="col-md-5 stage">
+			<div class="row">
+				<div class="col-md-6 col-xs-6 heroStage">
+					<h4 id="heroName"></h4>
+					<img id="heroPicked" src="" height="140" width="100">
 				</div>
 
-				<div class="row">
-					<div class="col-md-6 col-xs-6">
-						<h4 id="villainName"></h4>
-						<img id="villainPicked" src="" height="100" width="85">
-					</div>
+				<div class="col-md-6 col-xs-6">
+					<h4>Health</h4>
+					<div class="hp heroHp"></div>
+					<h4 class="attackButton">Attack</h4>
+				</div>
+			</div>
 
-					<div class="col-md-6 col-xs-6">
-						<h4>Enemy Health</h4>
-						<div class="hp villainHp"></div>
-					</div>
-				</div>			
- 
- 			</div>
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+					<h4 id="villainName"></h4>
+					<img id="villainPicked" src="" height="100" width="85">
+				</div>
+
+				<div class="col-md-6 col-xs-6">
+					<h4>Enemy Health</h4>
+					<div class="hp villainHp"></div>
+				</div>
+			</div>	
+
+				
 		</div>
+
+		<div class="row">
+			<div class="col-md-12 col-xs-12 status">
+				<h4 class="msg"></h4>
+			</div>
+		</div>	
 	</div>
 	<script type="text/javascript" src="./assets/javascript/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="./assets/javascript/game.js"></script>
